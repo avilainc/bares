@@ -1,8 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+  basePath: '/moda',
+  assetPrefix: '/moda',
   reactStrictMode: true,
   swcMinify: true,
   images: {
+    unoptimized: true, // Necessário para exportação estática
     remotePatterns: [
       {
         protocol: 'https',
@@ -17,6 +21,7 @@ const nextConfig = {
     optimizeCss: true,
     optimizePackageImports: ['lucide-react', 'framer-motion'],
   },
+  trailingSlash: true,
 }
 
 module.exports = nextConfig

@@ -2,7 +2,52 @@
 
 ## Opções de Deploy
 
-### 1. Vercel (Recomendado) ⭐
+### 1. GitHub Pages ⭐
+
+Hospedagem gratuita do GitHub para sites estáticos.
+
+#### Configuração Automática
+
+O projeto já está configurado para deploy automático no GitHub Pages. Cada push para a branch `main` fará o deploy automaticamente.
+
+**URL do site**: https://avilainc.github.io/moda
+
+#### Ativando o GitHub Pages (Primeira vez)
+
+1. Acesse: https://github.com/avilainc/moda/settings/pages
+2. Em **Source**, selecione: **GitHub Actions**
+3. Salve as configurações
+
+O deploy será feito automaticamente após o próximo push!
+
+#### Verificar Deploy
+
+- Acompanhe o progresso em: https://github.com/avilainc/moda/actions
+- Veja o site publicado em: https://avilainc.github.io/moda
+
+#### Configurações Aplicadas
+
+- ✅ Exportação estática habilitada (`output: 'export'`)
+- ✅ Base path configurado (`/moda`)
+- ✅ Imagens otimizadas para build estático
+- ✅ Workflow GitHub Actions configurado
+- ✅ Arquivo `.nojekyll` para evitar processamento Jekyll
+
+#### Deploy Manual
+
+Se precisar fazer deploy manual:
+
+```bash
+# Build do projeto
+npm run build
+
+# O conteúdo estará na pasta 'out/'
+# Faça upload manual da pasta 'out' para GitHub Pages
+```
+
+---
+
+### 2. Vercel (Alternativa Recomendada)
 
 A maneira mais fácil de fazer deploy de aplicações Next.js.
 
@@ -36,7 +81,7 @@ vercel --prod
 
 ---
 
-### 2. Netlify
+### 3. Netlify
 
 Deploy fácil com integração GitHub.
 
