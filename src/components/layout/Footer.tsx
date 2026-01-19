@@ -151,9 +151,22 @@ const Footer: React.FC = () => {
       <div className="border-t border-gray-800">
         <div className="container-luxury py-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-gray-400 text-sm">
-              © {currentYear} Easy4me. Todos os direitos reservados.
-            </p>
+            <div className="text-center md:text-left">
+              <p className="text-gray-400 text-sm">
+                © {currentYear} Easy4me. Todos os direitos reservados.
+              </p>
+              <p className="text-gray-500 text-xs mt-2">
+                Desenvolvido por{' '}
+                <a
+                  href="https://grdcompany.com.br"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-purple-400 hover:text-purple-300 transition-colors"
+                >
+                  GRDCompany
+                </a>
+              </p>
+            </div>
             <div className="flex items-center space-x-6">
               {socialLinks.map((social) => (
                 <motion.a
