@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/moda',
-  assetPrefix: '/moda',
+  basePath: '/bares',
+  assetPrefix: '/bares',
   reactStrictMode: true,
   images: {
     unoptimized: true, // Necessário para exportação estática
