@@ -86,7 +86,7 @@ const Testimonials: React.FC = () => {
 
               {/* Rating */}
               <div className="flex items-center mb-4">
-                {[...Array(testimonial.rating)].map((_, i) => (
+                {[...Array(testimonial.rating)].map((_: unknown, i: number) => (
                   <Star
                     key={i}
                     className="w-5 h-5 text-yellow-400 fill-yellow-400"
@@ -96,7 +96,7 @@ const Testimonials: React.FC = () => {
 
               {/* Content */}
               <p className="text-gray-700 leading-relaxed mb-6 text-lg">
-                &ldquo;{testimonial.content}&rdquo;
+                {testimonial.content}
               </p>
 
               {/* Author */}
