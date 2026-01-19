@@ -4,7 +4,6 @@ const nextConfig = {
   basePath: '/moda',
   assetPrefix: '/moda',
   reactStrictMode: true,
-  swcMinify: true,
   images: {
     unoptimized: true, // Necessário para exportação estática
     remotePatterns: [
@@ -18,7 +17,6 @@ const nextConfig = {
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },
   experimental: {
-    optimizeCss: true,
     optimizePackageImports: ['lucide-react', 'framer-motion'],
   },
   trailingSlash: true,

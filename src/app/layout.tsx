@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, Playfair_Display, Roboto_Mono } from 'next/font/google'
 import Script from 'next/script'
+import { Suspense } from 'react'
 import { FacebookPixel } from '@/components/FacebookPixel'
 import { FB_PIXEL_ID } from '@/lib/fpixel'
 import '@/styles/globals.css'
@@ -98,7 +99,11 @@ export default function RootLayout({
         )}
       </head>
       <body className="font-sans">
-        {FB_PIXEL_ID && <FacebookPixel />}
+        {FB_PIXEL_ID && (
+          <Suspense fallback={null}>
+            <FacebookPixel />
+          </Suspense>
+        )}
         {children}
       </body>
     </html>

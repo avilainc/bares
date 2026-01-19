@@ -3,12 +3,9 @@
 import { motion } from 'framer-motion'
 import {
   Package,
-  CreditCard,
-  TrendingUp,
   FileText,
+  TrendingUp,
   Users,
-  Zap,
-  Shield,
   Clock,
 } from 'lucide-react'
 
@@ -16,59 +13,38 @@ const Features: React.FC = () => {
   const features = [
     {
       icon: Package,
-      title: 'Gestão de Estoque Inteligente',
+      title: 'Integra estoque + PDV + finanças num só painel',
       description:
-        'Controle tamanhos, cores e variações com facilidade. Alertas automáticos de reposição.',
+        'Controle completo em uma única plataforma, eliminando a necessidade de múltiplos sistemas.',
       color: 'from-blue-500 to-cyan-500',
     },
     {
-      icon: CreditCard,
-      title: 'PDV Integrado',
+      icon: FileText,
+      title: 'Emissão de NFC-e/NF-e automatizada',
       description:
-        'Frente de caixa rápida e intuitiva. Múltiplas formas de pagamento em um só lugar.',
+        'Emita notas fiscais com um clique, garantindo conformidade fiscal em todos os estados.',
       color: 'from-purple-500 to-pink-500',
     },
     {
-      icon: FileText,
-      title: 'Emissão Fiscal Automatizada',
+      icon: Clock,
+      title: 'Não perde tempo com retrabalho manual',
       description:
-        'NFC-e e NF-e com um clique. Conformidade fiscal garantida em todos os estados.',
+        'Automatize processos repetitivos e foque no que realmente importa: seus clientes.',
       color: 'from-orange-500 to-red-500',
     },
     {
       icon: TrendingUp,
-      title: 'Relatórios em Tempo Real',
+      title: 'Dados reais pra decidir o que vender mais',
       description:
-        'Dashboards completos com insights de vendas, margem e performance por categoria.',
+        'Relatórios precisos para identificar tendências e otimizar seu mix de produtos.',
       color: 'from-green-500 to-emerald-500',
     },
     {
       icon: Users,
-      title: 'Gestão de Clientes',
+      title: 'Fácil pra toda equipe usar',
       description:
-        'Cadastro completo, histórico de compras e programas de fidelidade integrados.',
+        'Interface intuitiva que qualquer membro da equipe pode aprender rapidamente.',
       color: 'from-pink-500 to-rose-500',
-    },
-    {
-      icon: Zap,
-      title: 'Performance Otimizada',
-      description:
-        'Sistema rápido e responsivo. Funciona perfeitamente mesmo com internet instável.',
-      color: 'from-yellow-500 to-orange-500',
-    },
-    {
-      icon: Shield,
-      title: 'Segurança Avançada',
-      description:
-        'Seus dados protegidos com criptografia de ponta e backups automáticos diários.',
-      color: 'from-indigo-500 to-purple-500',
-    },
-    {
-      icon: Clock,
-      title: 'Suporte 24/7',
-      description:
-        'Equipe especializada sempre disponível para ajudar quando você precisar.',
-      color: 'from-teal-500 to-cyan-500',
     },
   ]
 
@@ -84,8 +60,7 @@ const Features: React.FC = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
-            Tudo que sua loja de moda precisa,{' '}
-            <span className="text-gradient">em um só lugar</span>
+            Benefícios que <span className="text-gradient">convertem</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Funcionalidades pensadas especialmente para o varejo de moda. Menos

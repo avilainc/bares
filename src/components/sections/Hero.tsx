@@ -66,8 +66,13 @@ const Hero: React.FC = () => {
 
             {/* Subtitle */}
             <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-2xl mx-auto lg:mx-0">
-              Controle estoque, vendas, notas e financeiro sem ficar preso no papel
-              ou Excel. Sistema pronto pra moda varejista.
+              Menos retrabalho, mais foco no cliente. Sistema pronto pra moda varejista, com controle de tamanho, cores e fluxo de caixa integrado. 
+              Easy4me
+            </p>
+
+            {/* Transformation */}
+            <p className="text-lg md:text-xl text-gray-700 mb-10 max-w-2xl mx-auto lg:mx-0 font-semibold">
+              Do caixa bagunçado ao controle total em dias. Veja resultados reais em menos tempo do que imagina.
             </p>
 
             {/* CTA Buttons */}

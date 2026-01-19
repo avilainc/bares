@@ -96,7 +96,7 @@ const Testimonials: React.FC = () => {
 
               {/* Content */}
               <p className="text-gray-700 leading-relaxed mb-6 text-lg">
-                "{testimonial.content}"
+                &ldquo;{testimonial.content}&rdquo;
               </p>
 
               {/* Author */}

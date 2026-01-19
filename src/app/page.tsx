@@ -1,6 +1,5 @@
 import Hero from '@/components/sections/Hero'
 import Features from '@/components/sections/Features'
-import Products from '@/components/sections/Products'
 import Testimonials from '@/components/sections/Testimonials'
 import CallToAction from '@/components/sections/CallToAction'
 import Header from '@/components/layout/Header'
@@ -12,7 +11,6 @@ export default function HomePage() {
       <Header />
       <Hero />
       <Features />
-      <Products />
       <Testimonials />
       <CallToAction />
       <Footer />
